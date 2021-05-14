@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "radical-tech-test-backend", "radical-tech-test-backend\radical-tech-test-backend.csproj", "{5F99919C-A983-47BB-9477-E6A5453DA624}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F99919C-A983-47BB-9477-E6A5453DA624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F99919C-A983-47BB-9477-E6A5453DA624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F99919C-A983-47BB-9477-E6A5453DA624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F99919C-A983-47BB-9477-E6A5453DA624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B8737CA-7D2B-4814-A2DA-8EB787016D52}
+	EndGlobalSection
+EndGlobal
