@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "https://danieljones94.github.io/radical-tech-test",
+      "applicationUrl": "http://localhost:5000",
       "sslPort": 0
     }
   },
@@ -20,7 +20,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://danieljones94.github.io/radical-tech-test",
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
