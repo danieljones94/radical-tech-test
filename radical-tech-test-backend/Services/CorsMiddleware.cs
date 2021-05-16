@@ -34,3 +34,4 @@ namespace radical_tech_test_backend.Services
             return builder.UseMiddleware<CorsMiddleware>();
         }
     }
+}

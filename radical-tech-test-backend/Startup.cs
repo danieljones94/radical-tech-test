@@ -62,10 +62,6 @@ namespace radical_tech_test
 
             app.UseCorsMiddleware();
 
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
