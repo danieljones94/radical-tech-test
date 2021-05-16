@@ -22,7 +22,7 @@ namespace radical_tech_test.Controllers
             _userRepository = userRepository;
             _jsonWebTokenService = jsonWebTokenService;
         }
-        [EnableCors("MyPolicy")]
+        
         [HttpPost(template:"signup")]
         public IActionResult SignUp(User signUpObj)
         {
@@ -37,7 +37,7 @@ namespace radical_tech_test.Controllers
 
             return Ok(toReturn);
         }
-        [EnableCors("MyPolicy")]
+        
         [HttpPost(template:"login")]
         public IActionResult Login(User loginObj)
         {
@@ -59,7 +59,7 @@ namespace radical_tech_test.Controllers
 
             return Ok(jwt);
         }
-        [EnableCors("MyPolicy")]
+        
         [HttpGet(template:"user")]
         public IActionResult GetUser()
         {
@@ -81,7 +81,7 @@ namespace radical_tech_test.Controllers
                 return Unauthorized();
             }
         }
-        [EnableCors("MyPolicy")]
+        
         [HttpPost]
         public IActionResult Logout()
         {
