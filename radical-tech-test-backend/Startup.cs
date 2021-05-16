@@ -31,7 +31,11 @@ namespace radical_tech_test
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            app.UseCors(builder => builder
+   .AllowAnyOrigin()
+   .AllowAnyMethod()
+   .AllowAnyHeader()
+   .AllowCredentials());
             services.AddDbContext<AppDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
@@ -59,7 +63,7 @@ namespace radical_tech_test
 
             app.UseRouting();
 
-            app.UseCors(o => o.WithOrigins("https://danieljones94.github.io/radical-tech-test-frontend").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+            app.UseCors(o => o.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 
             app.UseAuthentication();
 
