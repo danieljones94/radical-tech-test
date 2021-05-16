@@ -12,6 +12,7 @@ using radical_tech_test.Interfaces;
 using radical_tech_test.Models;
 using radical_tech_test.Repositories;
 using radical_tech_test.Services;
+using radical_tech_test_backend.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,7 +64,7 @@ namespace radical_tech_test
 
             app.UseRouting();
 
-            app.UseCors("AllowSpecificOrigin");
+            app.UseCorsMiddleware();
 
             app.UseAuthentication();
 
