@@ -20,7 +20,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5000",
+      "applicationUrl": "https://danieljones94.github.io/radical-tech-test",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
