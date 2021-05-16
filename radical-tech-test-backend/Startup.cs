@@ -59,7 +59,7 @@ namespace radical_tech_test
 
             app.UseRouting();
 
-            app.UseCors(o => o.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+            app.UseCors(o => o.WithOrigins("https://danieljones94.github.io/radical-tech-test-frontend").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 
             app.UseAuthentication();
 
