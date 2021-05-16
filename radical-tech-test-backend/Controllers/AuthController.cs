@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using radical_tech_test.Interfaces;
 using radical_tech_test.Models;
@@ -21,6 +22,7 @@ namespace radical_tech_test.Controllers
             _userRepository = userRepository;
             _jsonWebTokenService = jsonWebTokenService;
         }
+        [EnableCors("myCorsPolicy")]
         [HttpPost(template:"signup")]
         public IActionResult SignUp(User signUpObj)
         {
@@ -35,7 +37,7 @@ namespace radical_tech_test.Controllers
 
             return Ok(toReturn);
         }
-
+        [EnableCors("myCorsPolicy")]
         [HttpPost(template:"login")]
         public IActionResult Login(User loginObj)
         {
@@ -57,7 +59,7 @@ namespace radical_tech_test.Controllers
 
             return Ok(jwt);
         }
-
+        [EnableCors("myCorsPolicy")]
         [HttpGet(template:"user")]
         public IActionResult GetUser()
         {

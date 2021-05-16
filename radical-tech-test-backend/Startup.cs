@@ -33,8 +33,8 @@ namespace radical_tech_test
         {
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowSpecificOrigin",
-                    builder => builder.WithOrigins("https://danieljones94.github.io/radical-tech-test-frontend").AllowAnyHeader().AllowCredentials().AllowAnyMethod());
+                options.AddPolicy("MyPolicy",
+                    builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowCredentials().AllowAnyMethod());
             });
             services.AddDbContext<AppDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
